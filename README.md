@@ -1,2 +1,2 @@
-# BlockChainCitynow_Lab1
-BlockChain Citynow Internship Java Training
+# BlockChainCitynow
+Internet Banking - BlockChain Citynow Internship
