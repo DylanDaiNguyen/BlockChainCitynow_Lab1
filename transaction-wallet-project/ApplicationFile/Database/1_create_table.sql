@@ -1,0 +1,19 @@
+CREATE TABLE IF NOT EXISTS `user` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(45) NOT NULL UNIQUE,
+  `password` VARCHAR(45) NOT NULL,
+  `name` NVARCHAR(45) NULL,
+  `email` NVARCHAR(45) NULL,
+  `birthday` DATETIME NULL,
+  `phone` VARCHAR(15) NULL,
+  PRIMARY KEY (`id`)
+)
+
+CREATE TABLE IF NOT EXISTS `user_currency`(
+  `id` INT NOT NULL UNIQUE AUTO_INCREMENT,
+  `userId` INT NOT NULL,
+  `typeCurrency` VARCHAR(45) NOT NULL UNIQUE,
+  `address` VARCHAR(64) NOT NULL UNIQUE,
+  `balance` float8 NOT NULL,
+  PRIMARY KEY (`ID`)
+)

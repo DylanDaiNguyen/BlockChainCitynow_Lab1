@@ -1,0 +1,1 @@
+alter table `user_currency` add constraint fk_user_currency foreign key (`userId`) references user(`id`);
